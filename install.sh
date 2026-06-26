@@ -23,7 +23,7 @@ cat << EOF > "$HOME/.local/share/applications/dsi-covers.desktop"
 Type=Application
 Name=DSi Covers Fetcher
 Comment=Скачивание и ресайз обложек для TWiLightMenu
-Exec=bash -c "dsi-covers; echo -e '\nНажмите Enter для выхода...'; read"
+Exec=bash -c "\$HOME/.local/bin/dsi-covers; echo -e '\nНажмите Enter для выхода...'; read"
 Icon=applications-games
 Terminal=true
 Categories=Game;Utility;
