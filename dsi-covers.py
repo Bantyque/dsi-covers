@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import sys
 import getpass
 import requests
@@ -41,7 +42,7 @@ def main():
             break
     if not base_folder:
         tqdm.write('Флешка не найдена')
-        sys.exit()
+        sys.exit(0)
     tqdm.write('Флешка найдена')
 
     roms_folder = base_folder / 'roms' / 'nds'
@@ -73,7 +74,7 @@ def main():
     tqdm.write(f'Нужно скачать - {len(queue)} обложек')
     if len(queue) == 0:
         tqdm.write('У тебя уже есть все обложки')
-        sys.exit()
+        sys.exit(0)
 
 
 # Скачивание обложек с интернета
