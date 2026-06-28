@@ -1,19 +1,18 @@
 # dsi-covers
 
-Скрипт на Python для автоматического поиска и скачивания недостающих обложек игр для TWiLight Menu++ на прошитой Nintendo DSi.
+A Python script for automatically searching and downloading missing game covers for TWiLight Menu++ on a rooted Nintendo DSi.
 
-## Особенности
-* Автоматически находит точку монтирования SD-карты.
-* Сверяет существующие обложки.
-* Скачивает обложки с проверкой по регионам (EN, EU, US, JA, KO).
-* Корректно масштабирует изображения до 128x115.
+## Features
+* Automatically finds the SD card mount point.
+* Compares existing covers.
+* Downloads covers with region checks (EN, EU, US, JA, KO).
+* Correctly scales images to 128x115.
 
-## Требования
+## Requirements
 * `requests`
 * `pillow`
 * `tqdm`
 
-## Установка
-
+## Installation
 chmod +x install.sh
 ./install.sh
